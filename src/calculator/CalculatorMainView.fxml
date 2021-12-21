@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.CalculatorController">
+   <children>
+      <Pane fx:id="panelMain" focusTraversable="true" prefHeight="350.0" prefWidth="280.0" style="-fx-background-color: #cbf1f5;">
+         <children>
+            <TextField fx:id="editResult" alignment="TOP_CENTER" editable="false" focusTraversable="false" layoutX="10.0" layoutY="57.0" prefHeight="46.0" prefWidth="260.0" text="0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <Button fx:id="b1" layoutX="55.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonNumber" prefHeight="50.0" prefWidth="50.0" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="b2" layoutX="115.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonNumber" prefHeight="50.0" prefWidth="50.0" text="2" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="b3" layoutX="175.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonNumber" prefHeight="50.0" prefWidth="50.0" text="3" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="b4" layoutX="55.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonNumber" prefHeight="50.0" prefWidth="50.0" text="4" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="b5" layoutX="115.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonNumber" prefHeight="50.0" prefWidth="50.0" text="5" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="b6" layoutX="175.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonNumber" prefHeight="50.0" prefWidth="50.0" text="6" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="b7" layoutX="55.0" layoutY="230.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonNumber" prefHeight="50.0" prefWidth="50.0" text="7" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="b8" layoutX="115.0" layoutY="230.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonNumber" prefHeight="50.0" prefWidth="50.0" text="8" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="b9" layoutX="175.0" layoutY="230.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonNumber" prefHeight="50.0" prefWidth="50.0" text="9" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="b0" layoutX="55.0" layoutY="290.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonNumber" prefHeight="50.0" prefWidth="110.0" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="175.0" layoutY="290.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonNumber" prefHeight="50.0" prefWidth="50.0" text="." textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="235.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonOperation" prefHeight="50.0" prefWidth="35.0" text="+" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="235.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonOperation" prefHeight="50.0" prefWidth="35.0" text="-" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonOperation" prefHeight="50.0" prefWidth="35.0" text="×" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonOperation" prefHeight="50.0" prefWidth="35.0" text="÷" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="235.0" layoutY="230.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonOperation" prefHeight="50.0" prefWidth="35.0" text="^" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="230.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonOperation" prefHeight="50.0" prefWidth="35.0" text="√" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="290.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonClearEditResult" prefHeight="50.0" prefWidth="35.0" text="C" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="235.0" layoutY="290.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonResult" prefHeight="50.0" prefWidth="35.0" text="=" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="panelHistory" layoutX="-280.0" prefHeight="350.0" prefWidth="280.0" style="-fx-background-color: #cbf1f5;">
+         <children>
+            <CheckBox fx:id="selectNewOrOld" layoutX="98.0" layoutY="20.0" mnemonicParsing="false" onAction="#setEditHistory" selected="true" text="Сначала новые">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </CheckBox>
+            <TextArea fx:id="editHystory" editable="false" layoutX="10.0" layoutY="56.0" prefHeight="280.0" prefWidth="260.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextArea>
+         </children></Pane>
+      <Button fx:id="checkHystory" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButtonHistory" prefHeight="35.0" prefWidth="35.0" text="&gt;" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
